@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ERP_AuthService\\ERP_AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ERP_ApiGateway\\ERP_ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ERP_Organization\\ERP_Organization.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

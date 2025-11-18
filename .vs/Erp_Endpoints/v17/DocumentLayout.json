@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_organization\\erp_organization.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|solutionrelative:erp_organization\\erp_organization.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_organization\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|solutionrelative:erp_organization\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ERP_Organization",
+              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\ERP_Organization.csproj",
+              "RelativeDocumentMoniker": "ERP_Organization\\ERP_Organization.csproj",
+              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\ERP_Organization.csproj",
+              "RelativeToolTip": "ERP_Organization\\ERP_Organization.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T07:35:26.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrganizationDbContext.cs",
+              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Data\\OrganizationDbContext.cs",
+              "RelativeDocumentMoniker": "ERP_Organization\\Data\\OrganizationDbContext.cs",
+              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Data\\OrganizationDbContext.cs",
+              "RelativeToolTip": "ERP_Organization\\Data\\OrganizationDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T07:23:11.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
