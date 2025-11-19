@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.5.5" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ERP_Models\ERP_Models.csproj" />
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 ﻿using ERP_Models.Entities.Common.Responses;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ERP_Shared.Controllers
+namespace ERP_AuthService.Controllers
 {
     [ApiController]
     public class BaseController : ControllerBase

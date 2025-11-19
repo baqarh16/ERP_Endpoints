@@ -21,9 +21,6 @@
         public DateTime ExpiresAt { get; set; }
         public string FullName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
     }
-
-    public record RegisterRequest(string FullName, string Email, string Password);
-    public record LoginRequest(string Email, string Password);
-    public record TokenRequest(string AccessToken, string RefreshToken);
 }

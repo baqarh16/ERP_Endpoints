@@ -64,6 +64,7 @@ C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\ERP_ApiGateway.csproj.CoreCompileInputs.cache
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\ERP_ApiGateway.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\ERP_ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\ERP_ApiGateway.sourcelink.json
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_ApiGateway\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

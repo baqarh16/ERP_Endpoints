@@ -3,48 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\entities\\data\\erp_organization\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\entities\\data\\erp_organization\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|solutionrelative:erp_authservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|solutionrelative:erp_authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|solutionrelative:erp_authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_organization\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|solutionrelative:erp_organization\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_organization\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|solutionrelative:erp_organization\\data\\organizationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\entities\\data\\erp_organization\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\entities\\data\\erp_organization\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\entities\\data\\erp_organization\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\entities\\data\\erp_organization\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\dtos\\erp_authservice\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\dtos\\erp_authservice\\userauthdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\events\\userregisteredevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_authservice\\services\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{11F35644-10EC-49D9-A817-21F5B5BFCF48}|ERP_AuthService\\ERP_AuthService.csproj|solutionrelative:erp_authservice\\services\\authservice\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_models\\dtos\\erp_authservice\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CA6F8A0-2205-41B7-B7D5-7B92FBC73F80}|ERP_Models\\ERP_Models.csproj|solutionrelative:erp_models\\dtos\\erp_authservice\\authresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|c:\\projects\\workplace-baqar\\practice\\erp_endpoints\\erp_organization\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0EC20B86-DA82-4F86-8715-4617212325F9}|ERP_Organization\\ERP_Organization.csproj|solutionrelative:erp_organization\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,145 +50,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Program.cs",
-              "RelativeDocumentMoniker": "ERP_AuthService\\Program.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Program.cs",
-              "RelativeToolTip": "ERP_AuthService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:13:51.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ERP_AuthService\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "ERP_AuthService\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:13:33.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Program.cs",
-              "RelativeDocumentMoniker": "ERP_Organization\\Program.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Program.cs",
-              "RelativeToolTip": "ERP_Organization\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:06:31.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrganizationDbContext.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Data\\OrganizationDbContext.cs",
-              "RelativeDocumentMoniker": "ERP_Organization\\Data\\OrganizationDbContext.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Data\\OrganizationDbContext.cs",
-              "RelativeToolTip": "ERP_Organization\\Data\\OrganizationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:05:55.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Permission.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\Permission.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\Entities\\Data\\ERP_Organization\\Permission.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\Permission.cs",
-              "RelativeToolTip": "ERP_Models\\Entities\\Data\\ERP_Organization\\Permission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:04:51.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\Role.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\Entities\\Data\\ERP_Organization\\Role.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\Role.cs",
-              "RelativeToolTip": "ERP_Models\\Entities\\Data\\ERP_Organization\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:04:28.099Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\appsettings.json",
+              "RelativeDocumentMoniker": "ERP_AuthService\\appsettings.json",
+              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\appsettings.json",
+              "RelativeToolTip": "ERP_AuthService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:28:15.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserRegisteredEvent.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Events\\UserRegisteredEvent.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\Events\\UserRegisteredEvent.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Events\\UserRegisteredEvent.cs",
-              "RelativeToolTip": "ERP_Models\\Events\\UserRegisteredEvent.cs",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ERP_Organization\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Organization\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ERP_Organization\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T07:02:26.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Services\\AuthService\\AuthService.cs",
-              "RelativeDocumentMoniker": "ERP_AuthService\\Services\\AuthService\\AuthService.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_AuthService\\Services\\AuthService\\AuthService.cs",
-              "RelativeToolTip": "ERP_AuthService\\Services\\AuthService\\AuthService.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:59:45.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserAuthDto.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\DTOs\\ERP_AuthService\\UserAuthDto.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\DTOs\\ERP_AuthService\\UserAuthDto.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\DTOs\\ERP_AuthService\\UserAuthDto.cs",
-              "RelativeToolTip": "ERP_Models\\DTOs\\ERP_AuthService\\UserAuthDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:59:03.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthResponse.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\DTOs\\ERP_AuthService\\AuthResponse.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\DTOs\\ERP_AuthService\\AuthResponse.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\DTOs\\ERP_AuthService\\AuthResponse.cs",
-              "RelativeToolTip": "ERP_Models\\DTOs\\ERP_AuthService\\AuthResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:58:39.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\User.cs",
-              "RelativeDocumentMoniker": "ERP_Models\\Entities\\Data\\ERP_Organization\\User.cs",
-              "ToolTip": "C:\\Projects\\Workplace-baqar\\Practice\\Erp_Endpoints\\ERP_Models\\Entities\\Data\\ERP_Organization\\User.cs",
-              "RelativeToolTip": "ERP_Models\\Entities\\Data\\ERP_Organization\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T06:57:42.374Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T11:27:46.449Z",
               "EditorCaption": ""
             }
           ]

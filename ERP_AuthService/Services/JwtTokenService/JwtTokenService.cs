@@ -1,5 +1,6 @@
 ﻿// ERP_AuthService/Services/JwtTokenService/JwtTokenService.cs
 using ERP_Models.Entities.Data.ERP_AuthService;
+using ERP_Models.Entities.Data.ERP_Organization;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -25,7 +26,7 @@ namespace ERP_AuthService.Services.JwtTokenService
         public string Issuer => _settings.Issuer;
         public string Audience => _settings.Audience;
 
-        public string GenerateToken(User user)
+        public string GenerateAccessToken(User user)
         {
             var claims = new[]
             {
@@ -48,6 +49,13 @@ namespace ERP_AuthService.Services.JwtTokenService
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public string GetJti(string accessToken)
+        {
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(accessToken);
+            return jwtToken.Id; // This is the "jti" claim
         }
 
         public string GenerateRefreshToken()

@@ -7,6 +7,7 @@ C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\E
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.AssemblyInfoInputs.cache
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.AssemblyInfo.cs
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.csproj.CoreCompileInputs.cache
+C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.sourcelink.json
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.dll
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\refint\ERP_Models.dll
 C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Models\obj\Debug\net8.0\ERP_Models.pdb

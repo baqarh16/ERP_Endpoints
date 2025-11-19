@@ -1,34 +1,53 @@
+using ERP_Organization.Services.UserService;
+using ERP_OrganizationService.Data;
+using MassTransit;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// 1. Controllers only (no Swagger)
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.PropertyNamingPolicy = null; // optional
+    });
+
+// 2. DbContext
+builder.Services.AddDbContext<OrganizationDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("OrganizationConnection")
+        ?? throw new InvalidOperationException("Connection string 'OrganizationConnection' not found.")
+    ));
+
+// 3. Your UserService (inherits BaseService<User>)
+builder.Services.AddScoped<IUserService, UserService>();
+
+// 4. MassTransit + RabbitMQ – FULLY WORKING (this is the correct way in .NET 8)
+builder.Services.AddMassTransit(x =>
+{
+    // Add your consumers here later (e.g., OrderCreated ? InventoryService)
+    // x.AddConsumer<SomeConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        var rabbit = builder.Configuration.GetSection("RabbitMQ");
+
+        cfg.Host(rabbit["Host"] ?? "localhost", "/", h =>
+        {
+            h.Username(rabbit["Username"] ?? "guest");
+            h.Password(rabbit["Password"] ?? "guest");
+        });
+
+        // Optional: Configure retry, dead-letter, etc.
+        cfg.ConfigureEndpoints(context);
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
+// Pipeline – No Swagger, No Auth Middleware (Ocelot handles JWT)
 app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-});
+app.MapControllers();
 
 app.Run();
-
-internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

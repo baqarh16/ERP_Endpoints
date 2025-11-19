@@ -1,12 +1,13 @@
 ﻿// ERP_AuthService/Services/JwtTokenService/IJwtTokenService.cs
-using ERP_Models.Entities.Data.ERP_AuthService;
+using ERP_Models.Entities.Data.ERP_Organization;
 using System.Security.Claims;
 
 namespace ERP_AuthService.Services.JwtTokenService
 {
     public interface IJwtTokenService
     {
-        string GenerateToken(User user);
+        string GenerateAccessToken(User user);
+        string GetJti(string accessToken);
         string GenerateRefreshToken();
         ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
 

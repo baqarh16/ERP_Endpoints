@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-ERP_AuthService-...")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ERP_AuthService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffc1566e17be7c24f54180ec39ca2ab00916f217")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP_AuthService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP_AuthService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

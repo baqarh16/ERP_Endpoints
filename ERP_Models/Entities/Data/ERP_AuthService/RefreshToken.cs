@@ -1,4 +1,5 @@
 ﻿// ERP_Models/Entities/Data/ERP_AuthService/RefreshToken.cs
+using ERP_Models.Entities.Data.ERP_Organization;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 

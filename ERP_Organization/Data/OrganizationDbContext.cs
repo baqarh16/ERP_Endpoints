@@ -1,12 +1,10 @@
-﻿// ERP_OrganizationService/Data/OrganizationDbContext.cs
-using ERP_Models.Entities;
+﻿using ERP_Models.Data;
 using ERP_Models.Entities.Data.ERP_Organization;
 using Microsoft.EntityFrameworkCore;
-using System.Linq.Expressions;
 
 namespace ERP_OrganizationService.Data
 {
-    public class OrganizationDbContext : DbContext
+    public class OrganizationDbContext : BaseDbContext
     {
         public OrganizationDbContext(DbContextOptions<OrganizationDbContext> options)
             : base(options) { }
@@ -14,41 +12,40 @@ namespace ERP_OrganizationService.Data
         public DbSet<User> Users => Set<User>();
         public DbSet<Role> Roles => Set<Role>();
         public DbSet<Permission> Permissions => Set<Permission>();
+        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            base.OnModelCreating(modelBuilder); // Applies soft-delete + audit
 
-            // Soft Delete Global Filter
-            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
-            {
-                if (typeof(AuditableEntity).IsAssignableFrom(entityType.ClrType))
-                {
-                    var parameter = Expression.Parameter(entityType.ClrType, "e");
-                    var filter = Expression.Lambda(
-                        Expression.Equal(
-                            Expression.Property(parameter, nameof(AuditableEntity.IsDeleted)),
-                            Expression.Constant(false)
-                        ),
-                        parameter
-                    );
-                    entityType.SetQueryFilter(filter);
-                }
-            }
-
-            // Unique Email (only active users)
+            // Unique Email
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique()
                 .HasFilter("IsDeleted = 0");
 
-            // Configure many-to-many Role ↔ Permission
+            // Role ↔ Permission Many-to-Many (Correct way)
             modelBuilder.Entity<Role>()
                 .HasMany(r => r.Permissions)
                 .WithMany(p => p.Roles)
-                .UsingEntity(j => j.ToTable("RolePermissions")); // creates junction table automatically
+                .UsingEntity<Dictionary<string, object>>(
+                    "RolePermissions",
+                    j => j.HasOne<Permission>().WithMany().HasForeignKey("PermissionsId"),
+                    j => j.HasOne<Role>().WithMany().HasForeignKey("RolesId"),
+                    j =>
+                    {
+                        j.HasKey("RolesId", "PermissionsId"); // This is the fix!
+                        j.HasData(new { RolesId = 1, PermissionsId = 1 }); // Super Admin has All
+                    });
 
-            // Optional: Seed default data
+            // RefreshToken → User
+            modelBuilder.Entity<RefreshToken>()
+                .HasOne(rt => rt.User)
+                .WithMany(u => u.RefreshTokens)
+                .HasForeignKey(rt => rt.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Seed Roles & Permissions
             modelBuilder.Entity<Role>().HasData(
                 new Role { Id = 1, Name = "Super Admin" },
                 new Role { Id = 2, Name = "Admin" },
@@ -57,11 +54,7 @@ namespace ERP_OrganizationService.Data
 
             modelBuilder.Entity<Permission>().HasData(
                 new Permission { Id = 1, Name = "All" }
-                // Add more permissions as needed
             );
-
-            modelBuilder.Entity<Role>()
-                .HasData(new { Id = 1, Permissions = new[] { new Permission { Id = 1 } } });
         }
     }
 }

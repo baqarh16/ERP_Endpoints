@@ -1,46 +1,59 @@
 ﻿using ERP_Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System.Reflection;
 
-namespace ERP_Models.Common
+namespace ERP_Models.Data
 {
-    /// <summary>
-    /// Shared base DbContext used across ALL microservices
-    /// Features:
-    /// - Auto applies all IEntityTypeConfiguration<> from the calling assembly
-    /// - Global soft-delete query filter for all BaseEntity descendants
-    /// - No need to repeat OnModelCreating in every service
-    /// </summary>
     public abstract class BaseDbContext : DbContext
     {
         protected BaseDbContext(DbContextOptions options) : base(options) { }
 
+        // Global Soft-Delete Filter + Audit
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // 1. Auto apply all fluent configurations from the CALLING assembly
-            //    (not this assembly — this is the key fix!)
-            modelBuilder.ApplyConfigurationsFromAssembly(
-                Assembly.GetExecutingAssembly()  // This is the service assembly (AuthService, AttendanceService, etc.)
-            );
+            base.OnModelCreating(modelBuilder);
 
-            // 2. Global soft-delete filter for all entities inheriting from BaseEntity
+            // Apply soft-delete global filter
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
                 if (typeof(AuditableEntity).IsAssignableFrom(entityType.ClrType))
                 {
-                    // Build lambda: e => !e.IsDeleted
                     var parameter = Expression.Parameter(entityType.ClrType, "e");
-                    var body = Expression.Not(
-                        Expression.PropertyOrField(parameter, nameof(AuditableEntity.IsDeleted))
-                    );
-                    var lambda = Expression.Lambda(body, parameter);
+                    var filter = Expression.Lambda(
+                        Expression.Not(Expression.Property(parameter, nameof(AuditableEntity.IsDeleted))),
+                        parameter);
+                    entityType.SetQueryFilter(filter);
+                }
+            }
+        }
 
-                    entityType.SetQueryFilter(lambda);
+        // Auto-set audit fields
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            var entries = ChangeTracker.Entries<AuditableEntity>();
+
+            foreach (var entry in entries)
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        entry.Entity.CreatedAt = DateTime.UtcNow;
+                        entry.Entity.IsDeleted = false;
+                        break;
+
+                    case EntityState.Modified:
+                        entry.Entity.UpdatedAt = DateTime.UtcNow;
+                        break;
+
+                    case EntityState.Deleted:
+                        entry.State = EntityState.Modified;
+                        entry.Entity.IsDeleted = true;
+                        entry.Entity.DeletedAt = DateTime.UtcNow;
+                        break;
                 }
             }
 
-            base.OnModelCreating(modelBuilder);
+            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }

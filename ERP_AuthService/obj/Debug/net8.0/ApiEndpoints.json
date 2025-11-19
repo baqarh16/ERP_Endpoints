@@ -14,37 +14,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ERP_AuthService.Controllers.AuthController",
-    "Method": "Refresh",
-    "RelativePath": "api/auth/refresh",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ERP_Models.DTOs.ERP_AuthService.TokenRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ERP_AuthService.Controllers.AuthController",
-    "Method": "Register",
-    "RelativePath": "api/auth/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ERP_Models.DTOs.ERP_AuthService.RegisterRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   }
 ]
