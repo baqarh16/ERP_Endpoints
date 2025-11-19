@@ -1,5 +1,0 @@
-C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Clients\obj\Debug\net8.0\staticwebassets.build.json
-C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Clients\obj\Debug\net8.0\staticwebassets.build.json
-C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Clients\obj\Debug\net8.0\staticwebassets.build.json
-C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Clients\obj\Debug\net8.0\staticwebassets.build.json
-C:\Projects\Workplace-baqar\Practice\Erp_Endpoints\ERP_Clients\obj\Debug\net8.0\staticwebassets.build.json
