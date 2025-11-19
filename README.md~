@@ -1,1 +1,14 @@
-# ERP_Endpoints
+# ERP Endpoints — Bank-Grade .NET 8 Microservices
+
+## Architecture
+- Stateless AuthService (no DB)
+- Refresh tokens stored in OrganizationService
+- Ocelot API Gateway with JWT validation
+- Clean separation: Models, Clients, Services
+- 100% clean git history (no bin/obj/launchSettings noise)
+
+## Run (30 seconds)
+```bash
+cd ERP_OrganizationService
+dotnet ef database update
+dotnet run --project ERP_ApiGateway
