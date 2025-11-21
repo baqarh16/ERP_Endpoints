@@ -10,21 +10,21 @@ namespace ERP_Clients.Services.OrganizationClient
         public OrganizationClient(HttpClient httpClient) : base(httpClient) { }
 
         public Task<ApiResponse<User>> ValidateCredentialsForLoginAsync(LoginValidationRequest request)
-            => PostAsync<User>("api/organization/auth/validate-credentials", request);
+            => PostAsync<User>("organization/auth/validate-credentials", request);
 
         public Task<ApiResponse<User>> ValidateLoginAsync(LoginRequest request)
-            => PostAsync<User>("api/organization/auth/login", request);
+            => PostAsync<User>("organization/auth/login", request);
 
         public Task<ApiResponse<bool>> SaveRefreshTokenAsync(SaveRefreshTokenRequest request)
-            => PostAsync<bool>("api/organization/auth/refresh-token", request);
+            => PostAsync<bool>("organization/auth/refresh-token", request);
 
         public Task<ApiResponse<bool>> ValidateRefreshTokenAsync(ValidateRefreshTokenRequest request)
-            => PostAsync<bool>("api/organization/auth/refresh-token/validate", request);
+            => PostAsync<bool>("organization/auth/refresh-token/validate", request);
 
         public Task<ApiResponse<User>> GetUserByIdAsync(int userId)
-                => GetAsync<User>($"api/organization/users/{userId}");
+                => GetAsync<User>($"organization/users/{userId}");
 
         public Task<ApiResponse<List<User>>> GetAllUsersAsync()
-            => GetAsync<List<User>>("api/organization/users");
+            => GetAsync<List<User>>("organization/users");
     }
 }

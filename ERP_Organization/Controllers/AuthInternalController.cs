@@ -1,12 +1,13 @@
 ﻿using ERP_Models.DTOs.ERP_AuthService;
+using ERP_Organization.Controllers;
 using ERP_Organization.Services.UserService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERP_OrganizationService.Controllers
 {
     [ApiController]
-    [Route("api/organization/auth")]
-    public class AuthInternalController : ControllerBase
+    [Route("organization/auth")]
+    public class AuthInternalController : BaseController
     {
         private readonly IUserService _userService;
 

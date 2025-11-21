@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace ERP_Organization.Controllers
 {
     [ApiController]
-    [Route("api/organization/users")]
-    public class UserController : ControllerBase
+    [Route("[controller]/[action]")]
+    public class UserController : BaseController
     {
         private readonly IUserService _userService;
 

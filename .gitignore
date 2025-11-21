@@ -1,21 +1,25 @@
-# .NET + VS garbage
-bin/
-obj/
-.vs/
-*.csproj.user
-*.suo
+# Add any directories, files, or patterns you don't want to be tracked by version control
+**/v16/*
+**/packages/*
+**/bin/*
+**/obj/*
+**/Images/*
+**/node_modules/**
+**/*.lock
+**/package-lock.json
+.vs/*
+
+ERP_Endpoints.sln
+ERP_ApiGateway/ERP_ApiGateway.csproj.user
+ERP_Attendance/ERP_Attendance.csproj.user
+ERP_AuthService/ERP_AuthService.csproj.user
+ERP_Background/ERP_Background.csproj.user
+ERP_Cache/ERP_Cache.csproj.user
+ERP_Clients/ERP_Clients.csproj.user
+ERP_Models/ERP_Models.csproj.user
+ERP_Organization/ERP_Organization.csproj.user
+ERP_Endpoints/.vs/**
+*.dockerignore
+*.txt
+*.pubxml
 *.user
-*.userosscache
-*.sln.docstates
-
-# Wrong files in library projects
-ERP_Clients/Properties/launchSettings.json
-ERP_Clients/Program.cs
-ERP_Clients/appsettings*.json
-ERP_Models/Properties/launchSettings.json
-ERP_Models/Program.cs
-ERP_Models/appsettings*.json
-
-# Other junk
-packages/
-*.log

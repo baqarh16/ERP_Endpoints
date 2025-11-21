@@ -10,9 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
 // JWT Configuration
-var key = builder.Configuration["Jwt:Key"] ?? "default-key";
-var issuer = builder.Configuration["Jwt:Issuer"];
-var audience = builder.Configuration["Jwt:Audience"];
+var key = builder.Configuration["JwtSettings:Key"] ?? "default-key";
+var issuer = builder.Configuration["JwtSettings:Issuer"];
+var audience = builder.Configuration["JwtSettings:Audience"];
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

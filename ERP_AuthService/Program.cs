@@ -5,7 +5,6 @@ using ERP_Models.Entities.Data.ERP_AuthService;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ONLY THIS — NO DATABASE
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ERP_AuthService.Controllers
 {
     [ApiController]
-    [Route("api/auth")]
+    [Route("auth")]
     public class AuthController : BaseController
     {
         private readonly IAuthService _authService;
